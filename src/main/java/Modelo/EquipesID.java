@@ -3,20 +3,20 @@ package Modelo;
 public class EquipesID {
 
 	public static int getIdEquipe(String nomeEquipe){
-		if (nomeEquipe.equals("Equipe1")) return 101;
-		else if (nomeEquipe.equals("Equipe2")) return 102;
-		else if (nomeEquipe.equals("Equipe3")) return 103;
-		else if (nomeEquipe.equals("Equipe4")) return 104;
-		else if (nomeEquipe.equals("Equipe5")) return 105;
-		else if (nomeEquipe.equals("Equipe6")) return 106;
-		else if (nomeEquipe.equals("Equipe7")) return 107;
-		else if (nomeEquipe.equals("Equipe8")) return 108;
-		else if (nomeEquipe.equals("Equipe9")) return 109;
-		else if (nomeEquipe.equals("Equipe10")) return 110;
-		else if (nomeEquipe.equals("Equipe11")) return 111;
-		else if (nomeEquipe.equals("Equipe12")) return 112;
-		else if (nomeEquipe.equals("Equipe13")) return 113;
-		else if (nomeEquipe.equals("Equipe14")) return 114;
+		if (nomeEquipe.equals("Furia do Trovao")) return 801;
+		else if (nomeEquipe.equals("Hades HA")) return 802;
+		else if (nomeEquipe.equals("Lendarios do Olimpo")) return 803;
+		else if (nomeEquipe.equals("Guardioes de Atenas")) return 804;
+		else if (nomeEquipe.equals("Buenos Ares")) return 805;
+		else if (nomeEquipe.equals("Gregorianos")) return 806;
+		else if (nomeEquipe.equals("Hot Gods")) return 807;
+		else if (nomeEquipe.equals("Possuidon")) return 808;
+		else if (nomeEquipe.equals("Gladiadores")) return 809;
+		else if (nomeEquipe.equals("Imortais")) return 810;
+		else if (nomeEquipe.equals("Pegasus")) return 811;
+		else if (nomeEquipe.equals("Minocreuses")) return 812;
+		else if (nomeEquipe.equals("Hades")) return 813;
+		else if (nomeEquipe.equals("Espartanos")) return 814;
 		else if (nomeEquipe.equals("AcantonaBank")) return 190;
 
 		else return 0;
