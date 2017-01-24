@@ -32,9 +32,9 @@ public class NegociosAcoes {
 		double valorAcao = dao.getValorAcao(nomeEquipeAcao,contador);
 		ItemListaAcoesDisponiveis itemAcaoDisponivel = dao.getAcaoDisponivel(nomeEquipeAcao);
 		
-		if (valorPago != valorAcao) return "Valor da ação foi atualizado, atualize seus valores e refaça a transação!";
-		else if (itemAcaoDisponivel.getQuantidade() < quantidadeAcao) return "Quantidade disponível é menor que a quantidade comprada, atualize seus valores e refaça a transação";
-		else if (saldo < (quantidadeAcao * valorAcao )) return "Saldo insuficiente para realizar a transação";
+		if (valorPago != valorAcao) return "Valor da acao foi atualizado, atualize seus valores e refaca a transacao!";
+		else if (itemAcaoDisponivel.getQuantidade() < quantidadeAcao) return "Quantidade disponivel e menor que a quantidade comprada, atualize seus valores e refaca a transacao";
+		else if (saldo < (quantidadeAcao * valorAcao )) return "Saldo insuficiente para realizar a transacao";
 		else {
 			// realizando transacao
 			dao.updateSaldo(nomeEquipe, saldo - (quantidadeAcao * valorAcao));
@@ -47,7 +47,7 @@ public class NegociosAcoes {
 				dao.insereMinhaAcao(nomeEquipe, nomeEquipeAcao, valorAcao, quantidadeAcao);
 			}
 			}
-			return "Transação Concluida";
+			return "Transacao Concluida";
 		
 		
 	}
@@ -65,7 +65,7 @@ public class NegociosAcoes {
 		int quantidadeMinhasAcoes = dao.verificaAcaoExiste(nomeEquipe, nomeEquipeAcao, valorAcao);
 		dao.updateMinhaAcao(nomeEquipe, nomeEquipeAcao, valorAcao,quantidadeMinhasAcoes - quantidadeAcao);
 		
-		return "Transação Concluida";
+		return "Transacao Concluida";
 	}
 	
 }
