@@ -62,8 +62,8 @@ public class NegociosAcoes {
 		dao.updateSaldo(nomeEquipe, saldo + (quantidadeAcao * valorAcao));
 		dao.updateAcoesDisponiveis(nomeEquipeAcao,itemAcaoDisponivel.getQuantidade() + quantidadeAcao);
 		
-		int quantidadeMinhasAcoes = dao.verificaAcaoExiste(nomeEquipe, nomeEquipeAcao, valorAcao);
-		dao.updateMinhaAcao(nomeEquipe, nomeEquipeAcao, valorAcao,quantidadeMinhasAcoes - quantidadeAcao);
+		int quantidadeMinhasAcoes = dao.verificaAcaoExiste(nomeEquipe, nomeEquipeAcao, valorPago);
+		dao.updateMinhaAcao(nomeEquipe, nomeEquipeAcao, valorPago,quantidadeMinhasAcoes - quantidadeAcao);
 		
 		return "Transacao Concluida";
 	}
